@@ -2,15 +2,36 @@ body {
     background-color: gray;
 }
 div{
+
+}
+
+
+.topnav {
+    float: left;
+    color: white;
+    text-align: center;
+    background-color: #333;
+    overflow: hidden;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.hiddenlayer{
     color: transparent;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li {
-    display: inline;
+.active{
+    color: aqua;
+    background-color: darkgreen;
 }
