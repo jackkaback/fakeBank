@@ -1,18 +1,40 @@
 body {
     background-color: gray;
 }
-div{
+
+a {
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+div {
 
 }
 
+input{
+    display: inline;
+}
+.loginBox{
+    background-color: #4CAF50;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -100px;
+    width: 400px;
+    height: 200px;
+    color: black;
+    /*transform: rotate(5deg);*/
+}
 
 .topnav {
     float: left;
-    color: white;
     text-align: center;
     background-color: #333;
     overflow: hidden;
-    font-size: 17px;
+    display: inline;
+    font-size: 20px;
 }
 
 /* Change the color of links on hover */
@@ -27,11 +49,11 @@ div{
     color: white;
 }
 
-.hiddenlayer{
+.hiddenlayer {
     color: transparent;
 }
 
-.active{
+.active {
     color: aqua;
     background-color: darkgreen;
 }
