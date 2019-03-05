@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="main.css">
-    <meta charset="UTF-8">
-    <title>Title</title>
+	<link rel="stylesheet" href="main.css">
+	<meta charset="UTF-8">
+	<title>Login</title>
 
-    <div class="topnav">
-        <a href="index.html">Home</a>
-        <a href="account.html">Account</a>
-        <a class="active" href="login.html">Login</a>
-    </div>
+	<div class="topnav">
+		<a href="index.html">Home</a>
+		<a href="account.html">Account</a>
+		<a class="active" href="login.html">Login</a>
+	</div>
 
 </head>
-<body onload="f()">
 
-<div class="hiddenlayer">
 
-    <div class="loginBox" id = "loginBox">
-        <input type="text" id="username" aria-label="Username"/>
-        <input type="password" id="password" aria-label="Password"/>
-    </div>
+<body onload="f('loginBox')">
+
+<div class="hiddenLayer">
+
+	<div class="loginBox" id = "loginBox">
+		<h1>Login</h1>
+		<input type="text" id="username" aria-label="Username" value ="jack.k"/>
+		<input type="password" id="password" aria-label="Password" value = "hunter2"/>
+		<button class="button" id="loginButton" onclick="login()">Login</button>
+	</div>
 
 
 </div>
