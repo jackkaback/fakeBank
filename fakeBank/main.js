@@ -2,8 +2,20 @@ function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
 }
 var element;
+
+var running = true;
+
 function f(e) {
 	element = e;
+	run();
+
+}
+
+function run(){
+	if(running == false){
+		return;
+	}
+
 	var randVal = Math.floor(Math.random() * 5);
 
 	if(randVal == 0){
@@ -28,7 +40,7 @@ async function rotate(){
 	var i = 0;
 
 	// noinspection InfiniteLoopJS
-	while (true) {
+	while (running) {
 		await sleep(150);
 		var rotateVal = .25 * i + "deg);";
 		document.getElementById(element).setAttribute("style", "transform: rotate(" + rotateVal);
@@ -40,7 +52,7 @@ async function skewFuncX() {
 	var i = 0;
 
 	// noinspection InfiniteLoopJS
-	while(true){
+	while(running){
 		await sleep(150);
 		var skewVal = .25 * i +"deg);";
 		document.getElementById(element).setAttribute("style", "transform: skewX(" +  skewVal);
@@ -52,7 +64,7 @@ async function skewFuncY() {
 	var i = 0;
 
 	// noinspection InfiniteLoopJS
-	while(true){
+	while(running){
 		await sleep(150);
 		var skewVal = .25 * i +"deg);";
 		document.getElementById(element).setAttribute("style", "transform: skewy(" +  skewVal);
@@ -64,7 +76,7 @@ async function scaleFuncY() {
 	var i = 0;
 
 	// noinspection InfiniteLoopJS
-	while(true){
+	while(running){
 		await sleep(150);
 		var skewVal = 1 + .05 * i +");";
 		document.getElementById(element).setAttribute("style", "transform: scaleY(" +  skewVal);
@@ -76,12 +88,23 @@ async function scaleFuncX() {
 	var i = 0;
 
 	// noinspection InfiniteLoopJS
-	while(true){
+	while(running){
 		await sleep(150);
 		var skewVal = 1 + .05 * i +");";
 		document.getElementById(element).setAttribute("style", "transform: scaleX(" +  skewVal);
 		i++;
 	}
+}
+
+function setRunning() {
+	if(running == true) {
+		running = false;
+	}
+	else{
+		running = true;
+	}
+
+	run();
 }
 
 function login() {
