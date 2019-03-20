@@ -1,3 +1,6 @@
+/*
+	HTML TYPES
+ */
 body {
 	background-color: gray;
 	font-family: "Courier New", Courier, monospace;
@@ -27,6 +30,33 @@ input{
 button{
 	font-family: "Courier New", Courier, monospace;
 }
+
+
+/*
+	TABLES
+ */
+
+table{
+	text-align: center;
+	font-size: 30px;
+	color: black;
+	position: absolute;
+	top: 40%;
+	left: 20%;
+}
+
+th{
+	font-size: 40px;
+}
+
+tr{
+
+}
+
+
+/*
+	SPECIFIC CLASSES
+ */
 
 .loginBox{
 	font-family: "Courier New", Courier, monospace;
@@ -63,6 +93,21 @@ button{
 	font-size: 20px;
 }
 
+.hiddenLayer {
+	color: transparent;
+	z-index: 99999999;
+}
+
+.active {
+	color: aqua;
+	background-color: darkgreen;
+}
+
+/*
+	SPECIAL EFFECTS
+ */
+
+
 /* Change the color of links on hover */
 .topnav a:hover {
 	background-color: #ddd;
@@ -73,13 +118,4 @@ button{
 .topnav a.active {
 	background-color: #4CAF50;
 	color: white;
-}
-
-.hiddenLayer {
-	color: transparent;
-}
-
-.active {
-	color: aqua;
-	background-color: darkgreen;
 }
