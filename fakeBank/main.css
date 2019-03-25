@@ -58,6 +58,35 @@ tr{
 	SPECIFIC CLASSES
  */
 
+.active {
+	color: aqua;
+	background-color: darkgreen;
+}
+
+.button{
+	position: absolute;
+	right:    0;
+	bottom:   0;
+}
+
+.copyright {
+	position: absolute;
+	left:    0;
+	bottom:   0;
+}
+
+.help{
+	position: absolute;
+	cursor: not-allowed;
+	left:    0;
+	bottom:   0;
+}
+
+.hiddenLayer {
+	color: transparent;
+	z-index: 99999999;
+}
+
 .loginBox{
 	font-family: "Courier New", Courier, monospace;
 	background-color: #4CAF50;
@@ -71,19 +100,6 @@ tr{
 	color: black;
 }
 
-.button{
-	position: absolute;
-	right:    0;
-	bottom:   0;
-}
-
-.help{
-	position: absolute;
-	cursor: not-allowed;
-	left:    0;
-	bottom:   0;
-}
-
 .topnav {
 	float: left;
 	text-align: center;
@@ -93,14 +109,13 @@ tr{
 	font-size: 20px;
 }
 
-.hiddenLayer {
-	color: transparent;
-	z-index: 99999999;
-}
-
-.active {
-	color: aqua;
-	background-color: darkgreen;
+.warning {
+	height: 50px;
+	font-size: large;
+	background-color: red;
+	color: black;
+	position: relative;
+	top: 100px;
 }
 
 /*
